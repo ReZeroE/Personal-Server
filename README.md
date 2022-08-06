@@ -1,5 +1,5 @@
 # Personal Web Server (CS 3214)
-This program a personal server coded in **C** and **React.js** to support file transfer, MP4 video playback, web token authantification, and so on. The web server is served over Nginx and has persistent connections as per the HTTP/1.1 protocol. 
+This is a personal server coded in **C** and **React.js** to support file transfer, MP4 video playback, web token authantification, and so on. The web server is served over Nginx and has persistent connections as per the HTTP/1.1 protocol. 
 
 Note: TLS has not been configured in Nginx (as a reverse proxy) due to permission issues on the Univerity's server.
 
