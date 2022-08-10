@@ -3,7 +3,7 @@ This is a personal server coded in **C** and **React.js** to support file transf
 
 Note: TLS has not been configured in Nginx (as a reverse proxy) due to permission issues on the Univerity's server.
 
-Please read [Code Access Request](https://github.com/ReZeroE/MIPS-Assembler#code-access-request) to gain access to the source code of the program.
+Please read [Code Access Request](https://github.com/ReZeroE/Personal-Server#code-access-request) to gain access to the source code of the program.
 
 
 ## Serving Files
@@ -17,14 +17,14 @@ The web server supports user authentification through simple Json web tokens (th
 
  - Signing mechanism: [HMAC](https://www.okta.com/identity-101/hmac/#:~:text=Hash%2Dbased%20message%20authentication%20code,use%20signatures%20and%20asymmetric%20cryptography.) (previously implemented with private/public key pair using RSA)
 
-The servers uses the "stateless authentification" method. Unlike in traditional schemes in which the server must maintain a session store to remember past actions by a client, the presented token contains proof of past authentication, and thus the server can directly proceed in handling the request if it can validate the token. The countermeasure for stateless authentification's downside (difficulty in revoking a user’s access since tokens are issued directly to the client), the the server keeps a revocation lists (in which case a session-like functionality).
+The servers uses the "stateless authentification" method. Unlike in traditional schemes in which the server must maintain a session store to remember past actions by a client, the presented token contains proof of past authentication, and thus the server can directly proceed in handling the request if it can validate the token. To counter stateless authentification's downside (difficulty in revoking a user’s access since tokens are issued directly to the client), the the server keeps a revocation lists (in which case a session-like functionality).
 
 ## HTML5 Fallback
 Modern web applications exploit the History API, which is a feature by which JavaScript code in the client can change the URL that’s displayed in the address bar, making it appear to the user that they have navigated to a new URL when in fact all changes to the page were driven by JavaScript code that was originally loaded. The server supports HTML5 fallback by redirecting the user to a pre-specified homepage.
 
 
 ## Multi-client Support (multithreading)
-The server is capable of supporting multiple clients simultaneously through multi-threading by accpeting new clients and process HTTP requests even while HTTP transactions with an already accepted clients are still in progress 
+The server is capable of supporting multiple clients simultaneously through multi-threading by accpeting new clients and process HTTP requests even while HTTP transactions with an already accepted clients are still in progress.
 
 With the multithreading approach, the server imposes a reasonable limit to the number of acceptable clients based on the number of available logical cores on the machine.
 
