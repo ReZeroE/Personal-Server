@@ -1,7 +1,7 @@
 # Personal Web Server (CS 3214)
 This is a personal server coded in **C** and **React.js** to support file transfer, MP4 video playback, web token authantification, and so on. The web server is served over Nginx and has persistent connections as per the HTTP/1.1 protocol. (TLS has not been configured in Nginx due to permission issues on the Univerity's SSH server)
 
-To access to source code, please read [Code Access Request](https://github.com/ReZeroE/Personal-Server#code-access-request).
+To access the source code, please read [Code Access Request](https://github.com/ReZeroE/Personal-Server#code-access-request).
 
 
 ## Serving Files
