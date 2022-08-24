@@ -3,7 +3,7 @@ This is a personal server coded in **C** and **React.js** to support file transf
 
 Note: TLS has not been configured in Nginx due to permission issues on the Univerity's SSH server.
 
-Please read [Code Access Request](https://github.com/ReZeroE/Personal-Server#code-access-request) to gain access to the source code of the program.
+To access to source code, please read [Code Access Request](https://github.com/ReZeroE/Personal-Server#code-access-request).
 
 
 ## Serving Files
